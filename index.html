@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biography</title>
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="./Scripts/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Scripts/lib/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./Content/app.css">
+</head>
+<body>
+    <!-- Main Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <!-- Logo Image -->
+        <img src="./Assets/imgs/Website Logo.png" height="40" width="40">
+        <a class="navbar-brand" href="./index.html">Assignment 1</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <!-- Nav Links -->
+              <a class="nav-link" href="./index.html"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact.html"><i class="fas fa-info"></i> Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ProjectsPage.html"><i class="fas fa-project-diagram"></i> Project's Page</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Biography -->
+      <div class="jumbotron">
+            <h1 class="display-4">Biography</h1>
+            <p class="lead">This is a Biography about Jaden Mullings.</p>
+             <!-- Personal Image -->
+            <img src="./Assets/imgs/me.jpg" height="420" width="250">
+            <hr class="my-4">
+            <p id="bio"></p>
+            <span id="where_to_insert"></span>
+          </div>
+    
+    <!-- JavaScript Section -->
+    <script src="./Scripts/lib/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./Scripts/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./Scripts/app.js"></script>
+    <script src="./Scripts/bio.js"></script>
+</body>
+</html>
