@@ -1,13 +1,16 @@
 let contact;
 (function (contact)
 {
+    // User input capture function
     function OutputFormDataToConsole()
     {
+        // User input variables
         let FullName = document.getElementById("FullName");
         let ContactNumber = document.getElementById("ContactNumber");
         let EmailAddress = document.getElementById("EmailAddress");
         let Message = document.getElementById("Message");
 
+        // Output to console
         console.log("Form Data");
         console.log('%c_________________________________', "color: blue;");
         console.log('%cFull Name: ' + FullName.value, "font-weight: bold; color: green");
@@ -35,7 +38,7 @@ let contact;
         });
         // Adds to end of button created
         document.forms[0].appendChild(cancelButton);
-
+        // Send Buttons functionality
         let SendButton = document.getElementById("SendButton");
         SendButton.addEventListener("click", (event) => {
             event.preventDefault();
