@@ -1,6 +1,21 @@
 let contact;
 (function (contact)
 {
+    function OutputFormDataToConsole()
+    {
+        let FullName = document.getElementById("FullName");
+        let ContactNumber = document.getElementById("ContactNumber");
+        let EmailAddress = document.getElementById("EmailAddress");
+        let Message = document.getElementById("Message");
+
+        console.log("Form Data");
+        console.log('%c_________________________________', "color: blue;");
+        console.log('%cFull Name: ' + FullName.value, "font-weight: bold; color: green");
+        console.log('%cContact Number: ' + ContactNumber.value, "font-weight: bold; color: orange");
+        console.log('%cEmail Address: ' + EmailAddress.value, "font-weight: bold; color: red");
+        console.log('%cMessage: ' + Message.value, "font-weight: bold; color: purple");
+        console.log('%c_________________________________', "color: blue;");
+    }
     function ContactContent()
     {
         console.log("Contact Content Accessed....");
@@ -21,17 +36,11 @@ let contact;
         // Adds to end of button created
         document.forms[0].appendChild(cancelButton);
 
-        document.title = "Contact";
-
-        history.pushState("", document.title, "/contact");
-
-        // use the location object to output my pathname
-        console.log(location.pathname);
-        //show your host
-        console.log(location.host);
-        
-        //show your host name - domain name
-        console.log(location.hostname);
+        let SendButton = document.getElementById("SendButton");
+        SendButton.addEventListener("click", (event) => {
+            event.preventDefault();
+            OutputFormDataToConsole();
+        })
     }
     contact.ContactContent = ContactContent;
 })(contact || (contact = {}));
